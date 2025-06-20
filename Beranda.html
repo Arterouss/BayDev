@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kompor Biomassa TTG - Beranda</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <!-- Tailwinds -->
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar">
+    <div class="logo">Beranda</div>
+    <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+      <i class="bx bx-menu"></i>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="Beranda.html">Beranda</a></li>
+      <li><a href="TentangKami.html">Tentang kami</a></li>
+      <li><a href="Product.html">Product</a></li>
+      <li><a href="Tutorial.html">Tutorial</a></li>
+      <li><a href="penggunaan.html">Penggunaan</a></li>
+      <li><a href="testimoni.html">Testimoni</a></li>
+      <li><a href="kemitraan.html">Kemitraan/Distribusi</a></li>
+      <li><a href="pelatihan.html">Pelatihan</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="pesansekarang.html">Pesan Sekarang</a></li>
+      <li><a href="kontakkami.html">Kontak Kami</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="img/contoh.mp4" type="video/mp4">
+      Browser Anda tidak mendukung pemutaran video.
+    </video>
+    <div class="hero-content">
+      <h1>Kompor Biomassa TTG</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <button class="btn-wa" onclick="orderWhatsApp()">Order via WhatsApp</button>
+    </div>
+  </section>
+
+  <!-- Keunggulan Produk -->
+  <section class="keunggulan" id="keunggulan">
+    <h2>Lorem, ipsum dolor.</h2>
+    <div class="keunggulan-list">
+      <div class="keunggulan-item">
+        <i class='bx bxs-shield-plus'></i>
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="keunggulan-item">
+        <i class="bx bx-leaf"></i>
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="keunggulan-item">
+        <i class="bx bx-cog"></i>
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni Pengguna -->
+  <section class="testimoni" id="testimoni">
+    <h2>Lorem, ipsum dolor.</h2>
+    <div class="testimoni-container">
+      <div class="testimoni-card">
+        <img src="img/ChatGPT Image 6 Apr 2025, 18.19.07.png" alt="Foto Budi" />
+        <h3>lorem</h3>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing."</p>
+      </div>
+      <div class="testimoni-card">
+        <img src="img/ChatGPT Image 6 Apr 2025, 18.19.07.png" alt="Foto Siti" />
+        <h3>Lorem</h3>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing."</p>
+      </div>
+      <div class="testimoni-card">
+        <img src="img/ChatGPT Image 6 Apr 2025, 18.19.07.png" alt="Foto Andi" />
+        <h3>Lorem</h3>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing."</p>
+      </div>
+    </div>
+    <button class="btn-video" onclick="openTutorial()">Lihat Tutorial Video</button>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 20px; background: #f7f7f7; color: #555;">
+    <p>&copy; 2025 Kompor Biomassa TTG. All rights reserved.</p>
+    <p>Follow us on <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+  </footer>
+
+  <!-- Navigation -->
+  <div class="navigation">
+    <span class="prev-btn" onclick="navigateToPage(-1)">
+      <i class="bx bx-chevron-left"></i>
+    </span>
+    <span class="next-btn" onclick="navigateToPage(1)">
+      <i class="bx bx-chevron-right"></i>
+    </span>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function orderWhatsApp() {
+      window.open("https://wa.me/628xxxxxxxxxx", "_blank");
+    }
+    function openTutorial() {
+      window.open("https://www.youtube.com/", "_blank");
+    }
+    function toggleMenu() {
+      var menu = document.getElementById("nav-menu");
+      var ham = document.getElementById("hamburger");
+      menu.classList.toggle("active");
+      ham.classList.toggle("active");
+    }
+    function navigateToPage(direction) {
+      if (direction === 1) {
+        window.location.href = "TentangKami.html"; // Halaman berikutnya
+      } else if (direction === -1) {
+        window.location.href = "kontakkami.html"; // Halaman sebelumnya 
+      }
+    }
+  </script>
+</body>
+</html>

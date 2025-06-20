@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kompor Biomassa TTG - product</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar  -->
+   <nav class="navbar">
+    <div class="logo">Product</div>
+    <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+      <i class="bx bx-menu"></i>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="Beranda.html">Beranda</a></li>
+      <li><a href="TentangKami.html">Tentang kami</a></li>
+      <li><a href="Product.html">Product</a></li>
+      <li><a href="Tutorial.html">Tutorial</a></li>
+      <li><a href="penggunaan.html">Penggunaan</a></li>
+      <li><a href="testimoni.html">Testimoni</a></li>
+      <li><a href="kemitraan.html">Kemitraan/Distribusi</a></li>
+      <li><a href="pelatihan.html">Pelatihan</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="pesansekarang.html">Pesan Sekarang</a></li>
+      <li><a href="kontakkami.html">Kontak Kami</a></li>
+    </ul>
+  </nav>
+
+  <section id="produk" class="produk-section">
+    <div class="container">
+
+      <!-- Kompor Biomassa -->
+      <div class="produk-item">
+        <img src="img/ChatGPT Image 6 Apr 2025, 18.19.07.png"" alt="Kompor Biomassa" class="produk-image" />
+        <div class="produk-details">
+          <h2 class="produk-title"><i class="bx bx-cooker"></i>Kompor Biomassa</h2>
+          <p class="produk-lokasi"><i class="bx bx-map"></i>Bandung, Jawa Barat</p>
+          <ul class="produk-fitur">
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Harga: <span class="highlight">Mulai dari Rp 350.000</span></li>
+          </ul>
+          <a href="https://wa.me/628xxxxxxxxxx" class="btn-wa" target="_blank">Pesan via WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Wood Pellet -->
+      <div class="produk-item">
+        <img src="img/ChatGPT Image 6 Apr 2025, 18.19.07.png" alt="Wood Pellet" class="produk-image" />
+        <div class="produk-details">
+          <h2 class="produk-title"><i class="bx bx-flame"></i>Wood Pellet (Bahan Bakar)</h2>
+          <p class="produk-lokasi"><i class="bx bx-map"></i>Bandung, Jawa Barat</p>
+          <ul class="produk-fitur">
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Harga: <span class="highlight">Mulai dari Rp 350.000</span></li>
+          </ul>
+          <a href="https://wa.me/628xxxxxxxxxx" class="btn-wa" target="_blank">Pesan via WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Aksesoris & Paket -->
+      <div class="produk-item">
+        <img src="img/ChatGPT Image 6 Apr 2025, 18.19.07.png"" alt="Aksesoris & Paket UMKM" class="produk-image" />
+        <div class="produk-details">
+          <h2 class="produk-title"></i>Aksesoris & Paket UMKM</h2>
+          <p class="produk-lokasi"><i class="bx bx-map"></i>Bandung, Jawa Barat</p>
+          <ul class="produk-fitur">
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Harga: <span class="highlight">Mulai dari Rp 350.000</span></li>
+          </ul>
+          <a href="https://wa.me/628xxxxxxxxxx" class="btn-wa" target="_blank">Pesan via WhatsApp</a>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <footer style="text-align: center; padding: 20px; background: #f7f7f7; color: #555;">
+    <p>&copy; 2025 Kompor Biomassa TTG. All rights reserved.</p>
+    <p>Follow us on <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+  </footer>
+
+   <!-- Navigator -->
+   <div class="navigation">
+    <span class="prev-btn" onclick="navigateToPage(-1)">
+      <i class="bx bx-chevron-left"></i>
+    </span>
+    <span class="next-btn" onclick="navigateToPage(1)">
+      <i class="bx bx-chevron-right"></i>
+    </span>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function navigateToPage(direction) {
+      if (direction === 1) {
+        window.location.href = "Tutorial.html"; // Halaman berikutnya
+      } else if (direction === -1) {
+        window.location.href = "TentangKami.html"; // Halaman sebelumnya 
+      }
+    }
+  </script>
+</body>
+</html>

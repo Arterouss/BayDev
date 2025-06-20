@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kompor Biomassa TTG - pelatihan</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar">
+    <div class="logo">pelatihan</div>
+    <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+      <i class="bx bx-menu"></i>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="Beranda.html">Beranda</a></li>
+      <li><a href="TentangKami.html">Tentang kami</a></li>
+      <li><a href="Product.html">Product</a></li>
+      <li><a href="Tutorial.html">Tutorial</a></li>
+      <li><a href="penggunaan.html">Penggunaan</a></li>
+      <li><a href="testimoni.html">Testimoni</a></li>
+      <li><a href="kemitraan.html">Kemitraan/Distribusi</a></li>
+      <li><a href="pelatihan.html">Pelatihan</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="pesansekarang.html">Pesan Sekarang</a></li>
+      <li><a href="kontakkami.html">Kontak Kami</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Pelatihan & Edukasi</h2>
+    <p class="intro">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus necessitatibus quod voluptates sit sapiente dolorum.
+    </p>
+
+    <section class="tentang-section">
+      <h3><i class='bx bx-book-open'></i> Jenis Pelatihan</h3>
+      <ul>
+        <li><strong>Lorem ipsum dolor sit:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus necessitatibus quod voluptates sit sapiente dolorum.</li>
+        <li><strong>Lorem ipsum dolor sit:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus necessitatibus quod voluptates sit sapiente dolorum.</li>
+      </ul>
+    </section>
+
+    <section class="tentang-section">
+      <h3><i class='bx bx-time'></i> Durasi & Output</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus necessitatibus quod voluptates sit sapiente dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus necessitatibus quod voluptates sit sapiente dolorum.
+      </p>
+    </section>
+
+    <section class="tentang-section">
+      <h3><i class='bx bx-map'></i> Lokasi Pelatihan</h3>
+      <ul>
+        <li><strong>Tatap Muka:</strong> Lorem ipsum dolor sitLorem ipsum dolor sit</li>
+        <li><strong>Online:</strong> Lorem ipsum dolor sitLorem ipsum dolor sit</li>
+      </ul>
+    </section>
+
+    <section class="tentang-section">
+      <h3><i class='bx bx-edit'></i> Cara Daftar</h3>
+      <p>
+        Pendaftaran pelatihan dapat dilakukan langsung melalui
+        <a href="https://wa.me/6281234567890" target="_blank" style="color:#25d366; font-weight: 500;">WhatsApp resmi kami</a>.
+        Sertakan nama, jenis pelatihan, dan jumlah peserta.
+      </p>
+    </section>
+  </div>
+
+  <footer style="text-align: center; padding: 20px; background: #f7f7f7; color: #555;">
+    <p>&copy; 2025 Kompor Biomassa TTG. All rights reserved.</p>
+    <p>Follow us on <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+  </footer>
+
+  <!-- Navigasi antar halaman -->
+  <div class="navigation">
+    <span class="prev-btn" onclick="navigateToPage(-1)">
+      <i class="bx bx-chevron-left"></i>
+    </span>
+    <span class="next-btn" onclick="navigateToPage(1)">
+      <i class="bx bx-chevron-right"></i>
+    </span>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('active');
+    }
+
+    function navigateToPage(direction) {
+      if (direction === 1) {
+        window.location.href = "galeri.html"; // halaman berikutnya
+      } else if (direction === -1) {
+        window.location.href = "kemitraan.html"; // halaman sebelumnya
+      }
+    }
+  </script>
+</body>
+</html>

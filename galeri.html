@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kompor Biomassa TTG - Galeri</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .galeri-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .galeri-item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .galeri-item:hover {
+      transform: scale(1.03);
+    }
+
+    .galeri-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .galeri-caption {
+      padding: 10px;
+      background-color: #fff;
+      font-size: 0.95rem;
+      color: #444;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar">
+    <div class="logo">galeri Kami</div>
+    <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+      <i class="bx bx-menu"></i>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="Beranda.html">Beranda</a></li>
+      <li><a href="TentangKami.html">Tentang kami</a></li>
+      <li><a href="Product.html">Product</a></li>
+      <li><a href="Tutorial.html">Tutorial</a></li>
+      <li><a href="penggunaan.html">Penggunaan</a></li>
+      <li><a href="testimoni.html">Testimoni</a></li>
+      <li><a href="kemitraan.html">Kemitraan/Distribusi</a></li>
+      <li><a href="pelatihan.html">Pelatihan</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="pesansekarang.html">Pesan Sekarang</a></li>
+      <li><a href="kontakkami.html">Kontak Kami</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Galeri Kegiatan</h2>
+    <p class="intro">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus vel ab perferendis vero, nemo officiis?
+    </p>
+
+    <div class="galeri-grid">
+      <div class="galeri-item">
+        <img src="img/produksi1.jpg" alt="Produksi kompor">
+        <div class="galeri-caption">Proses Produksi Kompor TTG</div>
+      </div>
+      <div class="galeri-item">
+        <img src="img/distribusi1.jpg" alt="Distribusi kompor">
+        <div class="galeri-caption">Distribusi ke Mitra Wilayah</div>
+      </div>
+      <div class="galeri-item">
+        <img src="img/umkm1.jpg" alt="UMKM menggunakan kompor">
+        <div class="galeri-caption">Pemanfaatan Kompor oleh UMKM</div>
+      </div>
+      <div class="galeri-item">
+        <img src="img/pelatihan1.jpg" alt="Pelatihan penggunaan kompor">
+        <div class="galeri-caption">Pelatihan Penggunaan Kompor</div>
+      </div>
+      <div class="galeri-item">
+        <img src="img/pameran1.jpg" alt="Pameran energi terbarukan">
+        <div class="galeri-caption">Pameran Energi Terbarukan</div>
+      </div>
+      <div class="galeri-item">
+        <img src="img/siswa1.jpg" alt="Siswa belajar kompor biomassa">
+        <div class="galeri-caption">Edukasi untuk Siswa Sekolah</div>
+      </div>
+    </div>
+  </div>
+
+  <footer style="text-align: center; padding: 20px; background: #f7f7f7; color: #555;">
+    <p>&copy; 2025 Kompor Biomassa TTG. All rights reserved.</p>
+    <p>Follow us on <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+  </footer>
+
+  <!-- Navigasi antar halaman -->
+  <div class="navigation">
+    <span class="prev-btn" onclick="navigateToPage(-1)">
+      <i class="bx bx-chevron-left"></i>
+    </span>
+    <span class="next-btn" onclick="navigateToPage(1)">
+      <i class="bx bx-chevron-right"></i>
+    </span>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('active');
+    }
+
+    function navigateToPage(direction) {
+      if (direction === 1) {
+        window.location.href = "pesansekarang.html"; // halaman berikutnya
+      } else if (direction === -1) {
+        window.location.href = "pelatihan.html"; // halaman sebelumnya
+      }
+    }
+  </script>
+</body>
+</html>

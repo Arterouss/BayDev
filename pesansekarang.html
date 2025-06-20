@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kompor Biomassa TTG - Pesan Sekarang</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #25d366;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background-color: transparent;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #333;
+    }
+
+    input,
+    select,
+    textarea {
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #25d366;
+    }
+
+  </style>
+</head>
+<body>
+    <!-- Navbar  -->
+   <nav class="navbar">
+    <div class="logo">Pesan Product</div>
+    <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+      <i class="bx bx-menu"></i>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="Beranda.html">Beranda</a></li>
+      <li><a href="TentangKami.html">Tentang kami</a></li>
+      <li><a href="Product.html">Product</a></li>
+      <li><a href="Tutorial.html">Tutorial</a></li>
+      <li><a href="penggunaan.html">Penggunaan</a></li>
+      <li><a href="testimoni.html">Testimoni</a></li>
+      <li><a href="kemitraan.html">Kemitraan/Distribusi</a></li>
+      <li><a href="pelatihan.html">Pelatihan</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="pesansekarang.html">Pesan Sekarang</a></li>
+      <li><a href="kontakkami.html">Kontak Kami</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Pesan Sekarang</h2>
+    <form id="orderForm">
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama" placeholder="Nama Anda" required />
+
+      <label for="produk">Produk yang diminati</label>
+      <select id="produk" name="produk" required>
+        <option value="" disabled selected>Lorem, ipsum.</option>
+        <option value="Kompor Tipe A">Lorem, ipsum.</option>
+        <option value="Kompor Tipe B">Lorem, ipsum.</option>
+        <option value="Kompor UMKM">Lorem, ipsum.</option>
+      </select>
+
+      <label for="jumlah">Jumlah</label>
+      <input type="number" id="jumlah" name="jumlah" placeholder="Contoh: 5" min="1" required />
+
+      <label for="lokasi">Lokasi Pengiriman</label>
+      <textarea id="lokasi" name="lokasi" rows="3" placeholder="Contoh: Bandung, Jawa Barat" required></textarea>
+
+      <button type="button" class="btn-wa" onclick="kirimWhatsApp()">
+        <i class='bx bxl-whatsapp'></i> Kirim via WhatsApp
+      </button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Kompor Biomassa TTG. All rights reserved.</p>
+    <p>Follow us on <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+  </footer>
+
+  <div class="navigation">
+    <span class="prev-btn" onclick="navigateToPage(-1)">
+      <i class="bx bx-chevron-left"></i>
+    </span>
+    <span class="next-btn" onclick="navigateToPage(1)">
+      <i class="bx bx-chevron-right"></i>
+    </span>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function kirimWhatsApp() {
+      const nama = document.getElementById('nama').value;
+      const produk = document.getElementById('produk').value;
+      const jumlah = document.getElementById('jumlah').value;
+      const lokasi = document.getElementById('lokasi').value;
+
+      const pesan = `Halo Admin, saya ingin memesan produk:\n\nNama: ${nama}\nProduk: ${produk}\nJumlah: ${jumlah}\nLokasi: ${lokasi}`;
+      const nomorWA = '628123456789';
+
+      const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
+      window.open(url, '_blank');
+    }
+
+    function navigateToPage(direction) {
+      if (direction === 1) {
+        window.location.href = "kontakkami.html"; // Halaman berikutnya
+      } else if (direction === -1) {
+        window.location.href = "galeri.html"; // Halaman sebelumnya 
+      }
+    }
+
+    function toggleMenu() {
+          const menu = document.getElementById('nav-menu');
+          menu.classList.toggle('active');
+        }
+  </script>
+</body>
+</html>

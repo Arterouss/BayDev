@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kemitraan - Kompor Biomassa TTG</title>
+  <link rel="stylesheet" href="style.css" />
+ <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    .header {
+      text-align: center;
+      background: linear-gradient(135deg, #006400, #228b22);
+      color: white;
+      padding: 60px 20px;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #006400;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      margin-bottom: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #228b22;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #006400;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar">
+    <div class="logo">Kemitraan / Distribusi</div>
+    <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+      <i class="bx bx-menu"></i>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="Beranda.html">Beranda</a></li>
+      <li><a href="TentangKami.html">Tentang kami</a></li>
+      <li><a href="Product.html">Product</a></li>
+      <li><a href="Tutorial.html">Tutorial</a></li>
+      <li><a href="penggunaan.html">Penggunaan</a></li>
+      <li><a href="testimoni.html">Testimoni</a></li>
+      <li><a href="kemitraan.html">Kemitraan/Distribusi</a></li>
+      <li><a href="pelatihan.html">Pelatihan</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="pesansekarang.html">Pesan Sekarang</a></li>
+      <li><a href="kontakkami.html">Kontak Kami</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Kemitraan & Distribusi</h2>
+    <p class="intro">
+      Bergabunglah sebagai mitra dalam menyebarkan solusi energi terbarukan dengan Kompor Biomassa TTG.
+    </p>
+  
+    <section class="tentang-section">
+      <h3><i class='bx bx-store'></i> Penawaran Reseller / Distributor Lokal</h3>
+      <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde sapiente nisi ipsa impedit, nemo molestiae.
+      </p>
+    </section>
+  
+    <section class="tentang-section">
+      <h3><i class='bx bx-gift'></i> Keuntungan Bermitra</h3>
+      <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ul>
+    </section>
+  
+    <section class="tentang-section">
+      <h3><i class='bx bx-message-rounded-dots'></i> Tertarik Bermitra?</h3>
+      <p>
+        Lorem ipsum dolor sit amet. <a href="https://wa.me/6281234567890" target="_blank" style="color:#25d366; font-weight: 500;">WhatsApp kami</a> Lorem ipsum dolor sit amet.
+      </p>
+    </section>
+  
+    <section class="tentang-section">
+      <h3><i class='bx bx-group'></i> Kolaborasi CSR & Pelatihan Edukasi</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt in voluptate explicabo sapiente quidem? Consequatur ad, doloribus dolorem nam quibusdam accusamus et, optio modi corporis id ipsum at est adipisci, labore earum expedita. 
+      </p>
+    </section>
+  </div>
+  
+
+  <footer style="text-align: center; padding: 20px; background: #f7f7f7; color: #555;">
+    <p>&copy; 2025 Kompor Biomassa TTG. All rights reserved.</p>
+    <p>Follow us on <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+  </footer>
+
+  <!-- Navigator -->
+  <div class="navigation">
+    <span class="prev-btn" onclick="navigateToPage(-1)">
+      <i class="bx bx-chevron-left"></i>
+    </span>
+    <span class="next-btn" onclick="navigateToPage(1)">
+      <i class="bx bx-chevron-right"></i>
+    </span>
+  </div>
+
+  <script>
+    function navigateToPage(direction) {
+      if (direction === 1) {
+        window.location.href = "pelatihan.html"; // Halaman berikutnya
+      } else if (direction === -1) {
+        window.location.href = "testimoni.html"; // Halaman sebelumnya 
+      }
+    }
+
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

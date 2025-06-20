@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kompor Biomassa TTG - Tutorial</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar  -->
+   <nav class="navbar">
+    <div class="logo">Tutorial</div>
+    <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+      <i class="bx bx-menu"></i>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="Beranda.html">Beranda</a></li>
+      <li><a href="TentangKami.html">Tentang kami</a></li>
+      <li><a href="Product.html">Product</a></li>
+      <li><a href="Tutorial.html">Tutorial</a></li>
+      <li><a href="penggunaan.html">Penggunaan</a></li>
+      <li><a href="testimoni.html">Testimoni</a></li>
+      <li><a href="kemitraan.html">Kemitraan/Distribusi</a></li>
+      <li><a href="pelatihan.html">Pelatihan</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="pesansekarang.html">Pesan Sekarang</a></li>
+      <li><a href="kontakkami.html">Kontak Kami</a></li>
+
+    
+    </ul>
+  </nav>
+
+<!-- Tutorial -->
+  <main class="container">
+    <h2>Cara Menggunakan Kompor Biomassa</h2>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com"
+              title="Cara Menyalakan Kompor Biomassa Burner Terbaru"
+              allowfullscreen>
+      </iframe>
+      <p><strong>🔗 Lorem ipsum dolor sit amet.</strong></p>
+    </div>
+
+    <div class="tentang-section faq">
+        <h3>FAQ Penggunaan Kompor</h3>
+        <ul>
+          <li>
+            <strong>Lorem ipsum dolor sit amet.</strong><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, amet placeat!
+          </li>
+          <li>
+            <strong>Lorem ipsum dolor sit amet.</strong><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, amet placeat!
+          </li>
+          <li>
+            <strong>Lorem ipsum dolor sit amet.</strong><br>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, amet placeat!
+          </li>
+        </ul>
+      </div>
+      
+      
+      
+      <div class="tips">
+        <h3>Tips Merawat Kompor</h3>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <i class='bx bx-brush-alt'></i>
+            <p><strong>Bersihkan Abu</strong><br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, amet placeat!</p>
+          </div>
+          <div class="tip-card">
+            <i class='bx bx-home-alt'></i>
+            <p><strong>Simpan di Tempat Kering</strong><br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, amet placeat!</p>
+          </div>
+          <div class="tip-card">
+            <i class='bx bxs-hot'></i>
+            <p><strong>Gunakan Bahan Bakar Kering</strong><br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, amet placeat!</p>
+          </div>
+        </div>
+      </div>
+      
+
+    <div class="download-manual">
+      <a href="#" class="btn-download" download>
+        📄 Download Manual Pengguna (PDF)
+      </a>
+    </div>
+  </main>
+
+  <footer style="text-align: center; padding: 20px; background: #f7f7f7; color: #555;">
+    <p>&copy; 2025 Kompor Biomassa TTG. All rights reserved.</p>
+    <p>Follow us on <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+  </footer>
+  
+   <!-- Navigator  -->
+   <div class="navigation">
+    <span class="prev-btn" onclick="navigateToPage(-1)">
+      <i class="bx bx-chevron-left"></i>
+    </span>
+    <span class="next-btn" onclick="navigateToPage(1)">
+      <i class="bx bx-chevron-right"></i>
+    </span>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function navigateToPage(direction) {
+      if (direction === 1) {
+        window.location.href = "penggunaan.html"; // Halaman berikutnya
+      } else if (direction === -1) {
+        window.location.href = "product.html"; // Halaman sebelumnya 
+      }
+    }
+  </script>
+
+</body>
+</html>
